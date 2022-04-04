@@ -26,11 +26,14 @@ btn.onclick = createCell
 
 // funzioni
 
+
+// funzione per refreshare la pagina 
 function reload (){
    location.reload()
 }
 
 
+// funzione per creare le celle da 100 a 81 a 49
 function createCell(){
     for(let i = 1; i <= selezione.value;i++){
         let content = document.createElement('div')
@@ -41,6 +44,8 @@ function createCell(){
     }
 }
 
+
+// funzione per colorare le celle al click
 function colorCellBlue(){
     this.classList.add('bgboxblue')
 }
