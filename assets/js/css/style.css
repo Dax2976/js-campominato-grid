@@ -1,13 +1,11 @@
+/* common rules */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/* h1{
-    display: inline;
-    margin: 10px;
-    
-} */
+/**/
+/* header e footer */
 .site_header{
     display: flex;
     justify-content: space-between;
@@ -20,7 +18,8 @@ footer{
     margin: auto;
     width: 85%;
 }
-
+/**/
+/* styling page rules */
 .logo_left{
     display: flex;
     align-items: center;
@@ -56,14 +55,15 @@ footer{
     height: 70vh;
     width: 70vh;
 }
+/**/
 
-
-.bgbox{
+/* this rules implemented by function on main.js */
+.bgboxblue{
     background-color: rgb(32, 143, 222);
     color: white;
 }
 
-.diff_1{
+.diff_100{
     width: calc(100% / 10);
     height: calc(100% / 10);
     border: 1px solid black;
@@ -71,7 +71,7 @@ footer{
     align-items: center;
     justify-content: center;
 }
-.diff_2{
+.diff_81{
     width: calc(100% / 9);
     height: calc(100% / 9);
     border: 1px solid black;
@@ -79,7 +79,7 @@ footer{
     align-items: center;
     justify-content: center;
 }
-.diff_3{
+.diff_49{
     width: calc(100% / 7);
     height: calc(100% / 7);
     border: 1px solid black;

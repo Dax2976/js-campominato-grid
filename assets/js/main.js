@@ -32,31 +32,15 @@ function reload (){
 
 
 function createCell(){
-    if(selezione.value == 'dif1'){
-        for(let i = 1; i <= 100; i++){
-            let content = document.createElement('div')
-            content.classList.add('diff_1')
-            content.innerHTML = i
-            grid.appendChild(content)
-        }
-    } else if(selezione.value == 'dif2'){
-        for(let i = 1; i <= 81  ;i++){
-            let content = document.createElement('div')
-            content.classList.add('diff_2')
-            content.innerHTML = i
-            grid.appendChild(content)
-        }
-    } else if(selezione.value == 'dif3'){
-        for(let i = 1; i <= 49  ;i++){
-            let content = document.createElement('div')
-            content.classList.add('diff_3')
-            content.innerHTML = i
-            grid.appendChild(content)
-            content.onclick = colorCell
-        }
+    for(let i = 1; i <= selezione.value;i++){
+        let content = document.createElement('div')
+        content.classList.add('diff_' + selezione.value)
+        content.innerHTML = i
+        grid.appendChild(content)
+        content.addEventListener('click', colorCellBlue)
     }
 }
 
-function colorCell(){
-    this.classList.add('bgbox')
+function colorCellBlue(){
+    this.classList.add('bgboxblue')
 }
